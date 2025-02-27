@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Task</title>
+    <style>
+        marquee{
+            background-color:darkorange;
+            padding:10px
+        }
+        .item1{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            background-color: rgb(169, 175, 179);
+            color: blue;
+        }
+        .div1{
+            background-color:black;
+            padding:20px;
+            color: whitesmoke;
+            
+        }
+        .icons{
+            float: right;
+            color: white;
+        }
+
+
+
+        :root {
+  --color-primary: blue;
+  --color-white:  black;
+  --color-black:  rgb(169, 175, 179);
+  --color-black-1: black;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+ 
+}
+
+.logo {
+  color: green;
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height:80px;
+  width:100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+#button{
+        color: white;
+        background-color:green;
+        border-radius: 30px;
+        
+   }
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+
+.hero {
+  
+  background-image: url(./bg.jpg);
+  background-position: center;
+}
+
+.onn button{
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+    float: right;
+    padding: auto;
+    background-color: #04AA6D ;
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+        }
+        #onns{
+    display: none;
+    background-color: #bb5b16;
+    font-size: 20px;
+}
+#eq:hover #onns{
+    display: block;
+    position: absolute;
+    right: 100px;
+    height: 450px;
+    margin-top: 1px;
+    
+}
+.rec{
+    color: white;
+    padding: 8px;
+    background-color: blue;
+    width: 78%;
+     height: 30px; 
+     margin-left: 8%;
+     font-size: 15px;
+     
+}
+.submit{
+    border-radius:20px;
+    text-align: center;
+    color: white;
+}
+#for{
+    display: none;
+    background-color: white;
+}
+#apply:hover #for{
+    display: block;
+    position: absolute;
+    color: white;
+    left: 170px;
+    padding: 60px;
+    border-radius: 6%;
+    margin-top: -30%;
+
+}
+input[type="text"],
+  input[type="tel"],
+  input[type="email"]{
+    border: none; 
+    border-bottom: 2px solid peachpuff; /* Add bottom border */
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    outline: none; /* Remove outline when focused */
+  }
+
+        .div2{
+            background-image: url(main1.jpg);
+            height: 500px;
+            width:100%;
+            padding: 40px;
+            padding-left: 70px;
+            animation: hello 12s infinite;
+        }
+        @keyframes hello{
+            20%{
+            background-image:url("main2.jpg");
+        }
+        40%{
+            background-image: url("main3.jpg");
+        }
+        60%{
+            background-image: url("main4.jpg");
+        }
+        80%{
+            background-image: url("main5.jpg");
+        }
+        100%{
+            background-image: url("main6.jpg");
+        }
+        }
+        .div3{
+            width:1000px;
+            color: white;
+        }
+        
+        #button1{
+            color: white;
+            background-color:green;
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+        .div4{
+            text-align: center;
+            padding:20px;
+        }
+
+        .s1{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+           padding-left:150px;
+           background-color: white;
+           border-radius: 50px;
+        }
+    .box {
+    width: 25%;
+    padding: 50px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10%;
+    background-color: rgb(30, 155, 101);
+    margin: 5px;
+}
+.box:hover{
+    background-color: #fcfafa;
+    color: black;
+
+}
+.boxs{
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    padding:50px;
+}
+
+.dot {
+    width: 80px; 
+    height: 90px; 
+    margin-top: -30%;
+    margin-left: 37%;
+    background-color: #c8f4e7; 
+    border-radius: 50%; 
+}
+.dot i{
+    margin-top: 2%;
+}
+
+        .div5{
+            text-align: center;
+            padding-bottom:40px;
+        }
+        .div6{
+            display:grid;
+            grid-template-columns: auto auto auto;
+        }
+        .div7{
+            text-align: center;
+            
+        } 
+        
+
+        
+        .c1{
+            background-color: rgb(76, 159, 76);
+            border: 2px solid black;
+            margin: 0;
+            border-radius: 10px;
+            text-align: center;
+            width:400px;
+            justify-content: left;
+            padding: 10px;
+            
+            
+        }
+        .d1{
+            border: 2px solid black;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            width:400px;
+            
+           
+        }
+        .d2{
+            border: 2px solid black;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            width:400px;
+            
+           
+        }
+        .d3{
+            border: 2px solid black;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            width:400px;
+            
+        }
+        .d4{
+            border: 2px solid black;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            width:400px;
+            
+        }
+        .d5{
+            border: 2px solid black;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            width:400px;
+            
+        }
+        .d6{
+            border: 2px solid black;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 10px;
+            padding: 40px; 
+            text-align: center;
+            width:400px;
+        }
+
+        #button2{
+            color: white;
+            background-color:green;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #button3{
+            color: white;
+            background-color:green;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #button4{
+            color: white;
+            background-color:green;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .footer{
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            background-color: gray;
+            color: #000;
+        }
+        
+        
+ 
+        .f1{
+            padding-left: 500px;
+        }
+        .social{
+            font-size: 40px;
+        }
+        .fa-file-export{
+            font-size: 50px;
+             padding: 15px;
+            text-align: center;
+            border-radius: 50px;
+            padding-top: 20px;
+        }
+        .fa-clock{
+            font-size: 50px;
+             padding: 15px;
+            text-align: center;
+            border-radius: 50px;
+            padding-top: 20px;
+
+        }
+        .fa-building-columns{
+            font-size: 50px;
+             padding: 15px;
+            text-align: center;
+            border-radius: 50px;
+            padding-top: 20px;
+        }
+
+        .fa-square-phone{
+            font-size: 50px;
+             padding: 15px;
+            text-align: center;
+            border-radius: 50px;
+            padding-top: 20px;
+        }
+        .fa-square-facebook{
+            color: white;
+            padding-right: 50px;
+        }
+        .fa-square-twitter{
+            color: white;
+            padding-right: 40px;
+        }
+        .fa-instagram{
+            color: white;
+            padding-right: 30px;
+        }
+        .fa-linkedin{
+            color: white;
+        }
+        .ty1{
+            font-size: 30px;
+            border: darkgreen;
+            background-color:darkgreen;
+         
+            
+        }
+
+    </style>
+     <script src="https://kit.fontawesome.com/5c6d09dda0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <marquee behavior="alternate" direction="right">Our best offer Ever!! Summer Special - Get 3 Corses at 22499/-only-<a href="#">Read More</a></marquee>
+    
+
+        <div class="div1">
+            <a>Email: rjtechnology@gamil.com</a> ||
+            <a>Contact: +919502756537</a>
+           <div class="icons">
+            <a href="https://www.facebook.com/login/"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.twitter.com/login/"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/login/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            </div>
+
+
+            <div class="menu-bar">
+                <h1 class="logo"><i class="fa-solid fa-graduation-cap"></i>RJ Technology</h1>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Courses <i class="fas fa-caret-down"></i></a>
+                      <div class="dropdown-menu">
+                          <ul>
+                            <li><a href="#">Frontend</a></li>
+                            <li><a href="#">Backend</a></li>
+                            <div>
+                          </ul>
+                        </div>
+                  </li>
+                  <li><a href="#">Online Training</a>
+                  </li>
+                  <li><a href="#">Contact</a></li>
+        
+         
+         <div class="onn">
+            <span id="eq">
+            <button type="button">Enquiry</button>
+        
+            <span id="onns">
+                <h4 style="text-align: center;">Request for <br>Classroom & Online Training Quotation</h4>
+                <div class="rec">
+                    <i class="fa-solid fa-school" style="margin-left: 6%; margin-top: 2%;" >&nbsp;&nbsp; Clasroom&nbsp;&nbsp;&nbsp;</i>
+                    <i class="fa-solid fa-laptop">&nbsp;&nbsp;Online</i>
+                </div>
+                <br>
+            <form class="form">
+              
+              <input type="text" id="username" name="username" placeholder="Enter your name" required style="width: 80%; height: 30px; margin-left: 8%;"><br><br>
+              
+              <input type="email" id="email" name="email" placeholder="Enter Your email" required style="width: 80%; height: 30px; margin-left: 8%;"><br><br>
+              
+              <input type="Mobile" id="Mobile" name="Mobile" placeholder="Enter Your Mobile Number" required style="width: 80%; height: 30px; margin-left: 8%;"><br><br>
+              <select style="width: 80%; height: 30px; margin-left: 8%;">
+                <option>Select Courses</option>
+                <option>HTML5</option>
+                <option>CSS</option>
+                <option>Javascript</option>
+                <option>React JS</option>
+              </select><br><br>
+              <input class="submit" value="Submit Query" style="width: 80%; height: 30px; margin-left: 8%; background-color: blue;">
+            </form>
+            </span>
+            </span>
+        </div>
+            </ul>
+            </div>
+
+            
+
+        <div class="div2">
+            <div>
+                <h1>RJ Technologies</h1>
+                <h5>Best Online & Classroom Training Institute</h5>
+                <br><br>
+                <p class="div3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatem facere non architecto omnis consequuntur sed error molestias, eveniet aliquam ullam, reiciendis eligendi nulla nemo. A ex sit temporibus molestias provident, voluptates corrupti? Eveniet nemo libero hic repellat officiis et aliquam sint reprehenderit a labore delectus vitae odit, totam dolorum minima. Error odit porro libero? Magnam inventore numquam labore quam, tenetur ipsa libero voluptatibus natus dicta atque sed corporis doloremque incidunt impedit culpa, reiciendis hic voluptate nulla, officiis blanditiis molestias?</p>
+                <br>
+                <br>
+                <span id="apply">
+                    <button style="padding: 13px; font-family:monospace; background-color: #04AA6D;"><b>Apply Online</b></button>
+                        <span id="for">
+                            <form >
+                                <h2 style="color: black;">Quick Enquiry</h2>
+                                <input type="text" id="name" name="name" required placeholder="Name*"><br><br>
+                            
+                                <input type="tel" id="mobile" name="mobile" required placeholder="10 Digit Mobile No*"><br><br>
+                        
+                                <input type="email" id="email" name="email" required placeholder="Email*" style="width: 90%; height: 30px; margin-left: 2%;"><br><br>
+                            
+                                <input class="submit" value="I'm Interested" style="height: 30px; margin-left: 8%; background-color: blue;">
+                              </form>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="div4">
+            <h2>Key Features</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quos officiis eaque aliquam debitis molestias? Laboriosam laborum maxime, accusantium illum eum sed voluptatibus perferendis adipisci, <br> pariatur excepturi reprehenderit tempore hic doloremque!</p>
+        </div>
+
+       
+        <div class="boxs">
+            <div class="box">
+                <div class="dot" style="color: black;"><i class="fa-solid fa-file-export"></i></div>
+                <h1>Expert Faculty</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, sunt?</p>
+            </div>
+            <div class="box">
+                <div class="dot" style="color: black;"><i class="fa-regular fa-clock"></i></i></div>
+                <h1>Well Equiped Labs</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, sunt?</p>
+            </div>
+            <div class="box">
+                <div class="dot" style="color: black;"><i class="fa-solid fa-building-columns"></i></div>
+                <h1>Quality Education</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, sunt?</p>
+            </div>
+            <div class="box">
+                <div class="dot" style="color: black;"> <i class="fa-solid fa-square-phone"></i></div>
+                <h1>24*7 Access</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, sunt?</p>
+            </div>
+        </div>
+
+        <div class="div5">
+            <h2>Our Courses</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel porro cumque alias, ullam modi, quo minus enim ab doloribus consectetur iure eligendi necessitatibus recusandae ad <br>soluta aspernatur perspiciatis harum natus explicabo asperiores! Veniam impedit consequatur tempore dolores delectus ex.</p>
+        </div>
+
+        <section class="div6">
+
+        <div class="div7">
+            <h1 class="c1">Full Stack Development</h1>
+            <div class="d1">
+            <h4>Cras ultricies lacus consectetur,consectetur</h4>
+            <img src="star.jpg" height="20px" width="90px">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, quis?</p><br><br>
+            <button id="button2">Apply Online</button> 
+        </div>
+    </div>
+
+        <div>
+            <h1 class="c1">Front End Development</h1>
+                <div class="d2">
+           <h4>Cras ultricies lacus consectetur,consectetur</h4>
+           <img src="star.jpg" height="20px" width="90px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, harum.</p><br><br>
+            <button id="button3">Apply Online</button>
+        </div>
+        </div>
+        
+        <div>
+           <h1 class="c1">Backend Development</h1>
+           <div class="d3">
+           <h4>Cras ultricies lacus consectetur,consectetur</h4>
+           <img src="star.jpg" height="20px" width="90px">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, illum.</p><br><br>
+           <button id="button4">Apply Online</button>
+           </div>
+        </div>
+        
+
+        <div>
+            <br>
+            <h1 class="c1">Data Science</h1>
+            <div class="d4">
+           <h4>Cras ultricies lacus consectetur,consectetur</h4>
+           <img src="star.jpg" height="20px" width="90px">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, illum.</p><br><br>
+           <button id="button4">Apply Online</button>
+           </div>
+        </div>
+
+        <div>
+            <br>
+            <h1 class="c1">AWS</h1>
+            <div class="d5">
+           <h4>Cras ultricies lacus consectetur,consectetur</h4>
+           <img src="star.jpg" height="20px" width="90px">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, illum.</p><br><br>
+           <button id="button4">Apply Online</button>
+           </div>
+        </div>
+
+        <div>
+            <br>
+            <h1 class="c1">Devops</h1>
+            <div class="d6">
+           <h4>Cras ultricies lacus consectetur,consectetur</h4>
+           <img src="star.jpg" height="20px" width="90px">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, illum.</p><br><br>
+           <button id="button4">Apply Online</button>
+           </div>
+        </div>
+    </section>
+    <br>
+           
+        </div>
+
+        <div class="footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h1><i class="fa-solid fa-graduation-cap"></i>RJ Technology</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nihil blanditiis <br>aliquid sapiente recusandae odio<br> itaque fuga, iusto explicabo! Fugiat!</p>
+                </div>
+                
+    
+            </div>
+            <div class="footer-col">
+                <h1>Our Service</h1>
+                    <p>Mobile Application Design</p>
+                    <p>Web Application Design</p>
+                    <p>Website Design</p>
+                    <p>Web User Interface Design</p>
+                    <p>Web UX Design and Research</p>
+            
+            </div>
+    
+            
+            <div class="footer-col">
+                <h1>Head Office</h1>
+                <address>
+                    1/2,Marathahalli, Bengaluru<br>
+                    Karnataka-560037,<br>
+                    Phone: +91 9025741101<br>
+                    Email: rjtechnology@gamil.com
+                    <br><br>
+                    <b>Office Time</b>: 10Am - 6Pm
+                </address>
+            </div>
+            
+            <div class="footer-col">
+                <h1>Subscribe Us</h1>
+                <div class=" tel">
+                <input type="text"><button class="ty1"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent?compose=new"><i class="fa-solid fa-paper-plane"></i></a></button>
+            </div>
+                <br><br>
+                <div class="social">
+                    <a href="https://www.facebook.com/login/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.twitter.com/login/"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a> 
+                    <a href="https://www.linkedin.com/login/"><i class="fa-brands fa-linkedin"></i></a> 
+                </div>
+                </div>
+            </div>
+</body>
+</html>
